@@ -1,0 +1,116 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.container-header{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0px;
+    /* border: 1px solid rgb(136, 82, 82); */
+}
+.main-header{
+    width: 97%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    
+}
+.bar-logo{
+    width: 130px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    /* border: 1px solid black; */
+}
+.bar-logo img{
+    height: 20px;
+}
+.search-mic-hd{
+    width: 500px;
+    height: 30px;
+    /* margin: auto; */
+    /* border: 1px solid black; */
+    display: flex;
+    margin-top: 5px;
+}
+.search-mic-flx{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+
+}
+.search-bar{
+    width: 450px;
+    border: 1px solid black;
+    border-radius: 15px;
+    display: flex;
+
+}
+.input input{
+    width: 380px;
+    height: 80%;
+    margin-top: 1px;
+    margin-left: 10px;
+    margin-right: 15px;
+    
+    
+    outline: none;
+    border: none;
+}
+.search-bar i{
+    /* margin-top: 5px; */
+    /* margin-left: 5px; */
+    width: 30px;
+    height: 15px;
+    padding: 5px;
+    margin-top: 0/.5px;
+    background-color: #f8f8f8;
+    
+    border-top-right-radius: 12.5px;
+    border-bottom-right-radius: 12.5px;
+    /* border: 1px solid black; */
+}
+.search-mic{
+    margin-left: 20px;
+    
+    width: 30px;
+    height: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    background-color: #f2f2f2;
+
+}
+.vid-not-sin{
+    width: 10%;
+    
+    height: 30px;
+    
+
+}
+.v-n-s-flx{
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+.vid-ic i{
+    margin-top: 5px;
+}
+.not-ic{
+    margin-top: 5px;
+}
+.sin-ic img{
+    width: 50px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    border: 1px solid black;
+}
