@@ -190,16 +190,16 @@ const Homepage = () => {
               <div className='flex-hp-thum'>{photos.map((pho) => (
                 <div className="video-thumb">
 
-                  <img style={{width:"100%",borderRadius:"10px"}} src={pho.image} alt="" />
+                  <img style={{width:"100%",marginBottom:"10px"}} src={pho.image} alt="" />
                   <div className="title-vid">
-                    <img style={{width:"70px",border:"1px solid black",borderRadius:"50%"}} src="asset/minion.jpg" alt="" />
-                    <h3>{pho.title}</h3>
+                    <img style={{width:"40px",border:"1px solid black",borderRadius:"50%"}} src="asset/minion.jpg" alt="" />
+                    <h5>{pho.title}</h5>
                     <i class="fa-solid fa-ellipsis-vertical"></i>
                   </div>
-                  <h3>{pho.channel}</h3>
+                  <h4  style={{marginRight:"170px",color:"gray",fontWeight:"100",marginBottom:"5px"}}>{pho.channel}</h4>
                   <div className="views-days">
-                    <h4>{pho.like}</h4>
-                    <h4>{pho.day}</h4>
+                    <h5>{pho.like}</h5>
+                    <h5>{pho.day}</h5>
                   </div>
                 </div>
               ))}</div>}
