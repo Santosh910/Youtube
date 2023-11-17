@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import './Homepage.css'
+import { useNavigate } from 'react-router-dom';
+
 
 const Homepage = () => {
   const [counter, setCounter] = useState(false);
@@ -90,11 +92,18 @@ const Homepage = () => {
     }
   ])
   const [toggle, setToggle] = useState(false);
+  const [profile, setProfile] = useState(false)
   console.log(toggle)
+  const router = useNavigate()
 
   const sideBar = () => {
     setToggle(!toggle)
   }
+
+  const profileBar = () => {
+    setProfile(!profile)
+  }
+
 
   const hnadleColor = () => {
     setCounter(!counter)
@@ -134,7 +143,7 @@ const Homepage = () => {
                 <i class="fa-regular fa-bell"></i>
               </div>
               <div className="sin-ic">
-                <img src="asset/minion.jpg" alt="" />
+                <img onClick={profileBar} src="asset/minion.jpg" alt="" />
               </div>
             </div>
           </div>
@@ -328,6 +337,127 @@ const Homepage = () => {
                         </div>
                       ))}</div>}
                   </div>
+                </div>
+            }
+          </div>
+        }
+        {
+          profile ? (
+            <div className='iphone-15pro-slide-buy' onClick={profileBar}></div>
+          ) : ("")
+        }
+
+        {
+          <div className="profile-bar">
+            {
+              profile ?
+                <div className="profile-bar-right">
+                  <div className="profile-nav">
+                    <img style={{ width: "40px", border: "1px solid gray", borderRadius: "50%", height: "40px" }} src="asset/minion.jpg" alt="" />
+                    <div className="pro-nav-name">
+                      <h4>foodie brain</h4>
+                      <h5>@foodiebrain2023</h5>
+                      <h5>view channel</h5>
+                    </div>
+                  </div>
+
+                  <div className="slide-up">
+                  <div className="account-so">
+                    <div className="google-account">
+                      <i class="fa-brands fa-google"></i>
+                      <h4>Google Account</h4>
+                    </div>
+                    <div className="google-account">
+                      <i class="fa-brands fa-google"></i>
+                      <h4>Google Account</h4>
+                    </div>
+                    <div className="google-account">
+                      <i class="fa-brands fa-google"></i>
+                      <h4>Google Account</h4>
+                    </div>
+                  </div>
+                  
+                  <div className="account-so">
+                    <div className="google-account">
+                      <i class="fa-brands fa-google"></i>
+                      <h4>Google Account</h4>
+                    </div>
+                    <div className="google-account">
+                      <i class="fa-brands fa-google"></i>
+                      <h4>Google Account</h4>
+                    </div>
+                    <div className="google-account">
+                      <i class="fa-brands fa-google"></i>
+                      <h4>Google Account</h4>
+                    </div>
+                  </div>
+                  
+                  <div className="account-so">
+                    <div className="google-account">
+                      <i class="fa-brands fa-google"></i>
+                      <h4>Google Account</h4>
+                    </div>
+                    <div className="google-account">
+                      <i class="fa-brands fa-google"></i>
+                      <h4>Google Account</h4>
+                    </div>
+                    <div className="google-account">
+                      <i class="fa-brands fa-google"></i>
+                      <h4>Google Account</h4>
+                    </div>
+                  </div>
+                  
+                  <div className="account-so">
+                    <div className="google-account">
+                      <i class="fa-brands fa-google"></i>
+                      <h4>Google Account</h4>
+                    </div>
+                    <div className="google-account">
+                      <i class="fa-brands fa-google"></i>
+                      <h4>Google Account</h4>
+                    </div>
+                    <div className="google-account">
+                      <i class="fa-brands fa-google"></i>
+                      <h4>Google Account</h4>
+                    </div>
+                  </div>
+                  
+                  <div className="account-so">
+                    <div className="google-account">
+                      <i class="fa-brands fa-google"></i>
+                      <h4>Google Account</h4>
+                    </div>
+                    <div className="google-account">
+                      <i class="fa-brands fa-google"></i>
+                      <h4>Google Account</h4>
+                    </div>
+                    <div className="google-account">
+                      <i class="fa-brands fa-google"></i>
+                      <h4>Google Account</h4>
+                    </div>
+                  </div>
+                  
+                  <div className="account-so">
+                    <div className="google-account">
+                      <i class="fa-brands fa-google"></i>
+                      <h4>Google Account</h4>
+                    </div>
+                    <div className="google-account">
+                      <i class="fa-brands fa-google"></i>
+                      <h4>Google Account</h4>
+                    </div>
+                    <div className="google-account">
+                      <i class="fa-brands fa-google"></i>
+                      <h4>Google Account</h4>
+                    </div>
+                  </div>
+                  </div>
+
+                
+                </div>
+                :
+                <div className="profile-close">
+                  <i id='close-button' onClick={profileBar} class="fa-solid fa-xmark"></i>
                 </div>
             }
           </div>

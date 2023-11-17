@@ -290,3 +290,84 @@
     font-weight: 100;
     margin-right: 10px;
 }
+
+.profile-bar-right{
+    width: 300px;
+    height: 800px;
+    position: fixed;
+    top: 50px;
+    right: 100px;
+    /* color: white; */
+    background-color: white;
+    z-index: 10;
+    transition-duration: 300;
+    border-radius: 10px;
+}
+.profile-close{
+    position: fixed;
+    top: 0%;
+    right: -100%;
+    /* width: 300px; */
+    height: 100vh;
+    background-color: white;
+    z-index: 10;
+    transition-duration: 300;
+}
+#close-button {
+    position: absolute;
+    width: 40px;
+    padding-top: 10px;
+    height: 30px;
+    right: 200px;
+    top: 50px;
+    z-index: 10;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: white;
+}
+.iphone-15pro-slide-buy{
+    background:transparent;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    top: 0%;
+    left: 0%;
+}
+.profile-nav{
+    display: flex;
+    margin-left: 10px;
+    text-align: left;
+    margin-top: 20px;
+    border-bottom: 1px solid gray;
+    position: sticky;
+    top: 0;
+
+}
+.profile-nav img{
+    margin-right: 20px;
+}
+.profile-nav h5:nth-child(3){
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 255);
+}
+.account-so{
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+.google-account{
+    display: flex;
+    margin-top: 10px;
+    width: 90%;
+    margin-left: 5%;
+}
+.google-account i{
+    margin-right: 20px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+.slide-up{
+    overflow-y: scroll;
+}
