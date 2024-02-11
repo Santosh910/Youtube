@@ -362,6 +362,7 @@ const Homepage = () => {
                   </div>
 
                   <div className="slide-up">
+                    
                   <div className="account-so">
                     <div className="google-account">
                       <i class="fa-brands fa-google"></i>
